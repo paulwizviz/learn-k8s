@@ -1,6 +1,6 @@
 # Using minikube and kubectl
 
-This is a an implementation using minikube based on this example [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
+This is an implementation using minikube based on this example [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
 
 ## Minikube operations
 
@@ -15,6 +15,16 @@ This is a an implementation using minikube based on this example [https://miniku
 1. VM operations.
    * Stop vm. `minikube stop`
    * Delete vm. `minikube delete`
+
+## Managing Docker Images
+
+Run this command:
+
+```
+minikube image load <image name in Docker Deamon>
+```
+
+To push images from docker deamon to minikube.
 
 ## Using Kubectl to create a basic application
 
