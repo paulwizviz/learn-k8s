@@ -4,9 +4,9 @@ Welcome to my collection of working examples and refernces to educational materi
 
 ## Topics
 
+* [Kubectl](./docs/kubectl.md)
 * [MiniKube](./docs/minikube.md)
 * [Minimum deployment](./docs/basic.md)
-
 
 ## Disclaimer
 

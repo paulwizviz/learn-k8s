@@ -18,29 +18,34 @@ This is an implementation using minikube based on this example [https://minikube
 
 ## Managing Docker Images
 
-Run this command:
+The following are options for managing Docker Images:
 
+1. `minikube image load` (Recommended for Minikube): This is the easiest and most efficient way for Minikube.  It loads the image directly into Minikube's Docker daemon.
+
+```bash
+minikube image load my-web-app:v1
 ```
-minikube image load <image name in Docker Deamon>
+> **NOTE**: my-web-app:v1 is an example image prebuilt and store in Docker deamons.
+
+After running this command, Minikube will have the image available, and your Kubernetes deployments can reference it.  This is the recommended approach for local development with Minikube.
+
+2. Building the image inside Minikube: You can use the docker CLI within the Minikube VM to build the image.  This requires some setup but can be useful.
+
+* First, you need to configure your local Docker client to talk to the Docker daemon inside Minikube:
+```bash
+eval $(minikube docker-env)
 ```
+This command sets the necessary environment variables.  Make sure to run this command in any terminal where you want to use the Docker CLI to interact with Minikube's Docker.
 
-To push images from docker deamon to minikube.
+* Then, you can build your image as usual:
 
-## Using Kubectl to create a basic application
+```bash
+docker build -t my-web-app:v1 .
+```
+Now, the image is built inside Minikube's Docker, and your Kubernetes deployments can reference it.
 
-In this scenario, we are creating an app based on an image named `k8s.gcr.io/echoserver:1.4`. The steps involved are:
+3. Using a local registry (More complex, less common for Minikube): You can set up a local Docker registry (e.g., using docker-compose or a simple Docker container) and push your images there.  Minikube can then pull from this local registry.  This is more complex than the other options and is generally not recommended for simple Minikube setups.  It's more relevant for multi-node clusters or CI/CD pipelines.
 
-1. Create deployment call **hello-node** based on image k8s.gcr.io/echoserver:1.4. `kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4`
-1. Create a service Expose deployment named **hello-node**, exposing port 8080 to the outside world. `kubectl expose deployment hello-node --type=LoadBalancer --port=8080`
-1. Provide access to an applications. `kubectl port-forward service/hello-node 7080:8080`
+Which method should you use?
 
-## Inspecting and managing applications
-
-Deployment related
-1. View deployment. `kubectl get deployments`
-1. View pod. `kubectl get pods`
-1. Delete deployment. `kubectl delete deployment hello-node`
-
-Service related
-1. Delete services. `kubectl delete service hello-node`
-1. View service. `kubectl get services`
+For Minikube development, minikube image load is the strongly recommended approach. It's the simplest, fastest, and most efficient.  It avoids the complexities of setting up a local registry or building inside the VM.
