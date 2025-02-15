@@ -1,6 +1,14 @@
 # Kubectl
 
-The following are cases for using Kubectl
+The following summarises `kubectl` operations.
+
+## `kubectl` Configuration (kubeconfig)
+
+`kubectl` uses a configuration file (usually ~/.kube/config) to store connection details for one or more Kubernetes clusters.  This file is called a kubeconfig file.  It contains information like:
+
+* **Clusters**: The API server addresses and certificates for your Kubernetes clusters.
+* **Users**: Authentication credentials for accessing the clusters.
+* **Contexts**: A combination of a cluster and a user. You use contexts to switch between different clusters.
 
 ## Creating a Simple Application
 
