@@ -4,7 +4,8 @@ A collection of working examples and refernces to educational materials about Ku
 
 ## Topics
 
-* [Concepts](./docs/concepts.md)
+* [Architecture](./docs/architecture.md)
+* [DevOps](./docs/devops.md)
 * [Kubectl](./docs/kubectl.md)
 * [MiniKube](./docs/minikube.md)
 * [Helm](./docs/helm.md)

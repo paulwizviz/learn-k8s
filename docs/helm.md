@@ -59,3 +59,16 @@ A Helm chart resides in a directory, and that directory's name is the chart's na
 * `charts/` directory (optional):
     * This directory is used to store dependent charts (subcharts).   
     * If your chart relies on other charts, you can include them here.
+
+## Releases
+
+A release is an instance of a chart running in a Kubernetes cluster. Every time you install a chart, you create a release. This allows you to have multiple instances of the same application running with different configurations.
+
+## Repositories
+
+Helm charts are stored in repositories, which are like online libraries. You can find and download pre-built charts from public repositories or create your own private ones.
+
+## References
+
+* [Helm](https://www.redhat.com/en/topics/devops/what-is-helm)
+* [Secure Helm: Kubernetes Deployment Best Practices](https://www.plural.sh/blog/helm-chart)
