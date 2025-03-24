@@ -1,12 +1,23 @@
-# Overview
+# Learn-k8s
 
-Welcome to my collection of working examples and refernces to educational materials about Kubernetes.
+A collection of working examples and refernces to educational materials about Kubernetes.
+
+## What is Kubernetes?
+
+Kubernetes (often abbreviated as K8s) is an open-source system for automating deployment, scaling, and management of containerized applications.  Think of it as an orchestrator for containers.  It takes care of things like:   
+
+* **Scheduling:** Deciding where your containers run.
+* **Scaling:** Increasing or decreasing the number of running containers.
+* **Service Discovery:** How your applications find each other.
+* **Load Balancing:** Distributing traffic across your containers.
+* **Rolling Updates:** Updating your application with minimal downtime.
+* **Self-Healing:** Restarting failed containers.
 
 ## Topics
 
 * [Kubectl](./docs/kubectl.md)
 * [MiniKube](./docs/minikube.md)
-* [Minimum deployment](./docs/basic.md)
+* [DevOps](./docs/devops.md)
 
 ## Disclaimer
 
