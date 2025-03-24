@@ -1,7 +1,6 @@
-# Concepts
+# DevOps
 
-
-## Core Steps in Deployment
+The core steps in DevOps are:
 
 1. Create a Deployment: You define the desired state of your application (e.g., how many replicas of your pod should run, what container image to use).
 2. Kubernetes Schedules Pods: Kubernetes places the pods onto the nodes based on resource availability and other factors.
@@ -68,8 +67,3 @@ Here are example scripts of a minimum deployment:
 
 * [Kubernetes YAML](https://www.youtube.com/watch?v=qmDzcu5uY1I)
 * [Full Application deployment example](https://www.youtube.com/watch?v=EQNO_kM96Mo)
-
- * [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)
-    * [The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
-    * [Working with Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/)
-    * [Cluster Architecture](https://kubernetes.io/docs/concepts/architecture/)
