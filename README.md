@@ -1,6 +1,6 @@
-# Learn-k8s
+# Learn Kubernetes: Working Examples and References
 
-A collection of working examples and refernces to educational materials about Kubernetes.
+This repository contain references to working examples, educational and opinions related to Elastic Search technologies.
 
 ## Topics
 
