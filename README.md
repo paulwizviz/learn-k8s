@@ -4,11 +4,11 @@ This repository contain references to working examples, educational and opinions
 
 ## Topics
 
-* [Architecture](./docs/architecture.md)
-* [DevOps](./docs/devops.md)
-* [Kubectl](./docs/kubectl.md)
-* [MiniKube](./docs/minikube.md)
-* [Helm](./docs/helm.md)
+* [Architecture](./topics/architecture.md)
+* [DevOps](./topics/devops.md)
+* [Kubectl](./topics/kubectl.md)
+* [MiniKube](./topics/minikube.md)
+* [Helm](./topics/helm.md)
 
 ## Disclaimer
 
