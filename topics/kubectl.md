@@ -7,7 +7,7 @@ The following summarises `kubectl` operations.
 * [`kubectl` Configuration (kubeconfig)](#kubectl-configuration-kubeconfig)
 * [Creating a Simple Application](#creating-a-simple-application)
 * [Inspecting and Managing Applications](#inspecting-and-managing-applications)
-* [Managing Kubectl Context](#managing-kubectl-context)
+* [Kubectl Context](#kubectl-context)
 
 ## `kubectl` Configuration (kubeconfig)
 
@@ -38,15 +38,19 @@ Service related
 1. Delete services. `kubectl delete service hello-node`
 1. View service. `kubectl get services`
 
-## Setting Kubectl Context
+## Kubectl Context
 
-* [Minikube](#context-for-minikube)
+* [Context Settings](#kubectl-context-settings)
+* [Context operations](#kubectl-context-operations)
 
-### Context for Minikube
+### Kubectl context settings
 
-Minikube simplifies this process. After starting Minikube, run `minikube config use-context minikube`. This command configures `kubectl` to interact with your Minikube cluster. You can verify this by running `kubectl config current-context`, which should now show 'minikube'.
+#### Minikube
 
-## Managing Kubectl Context
+* **STEP 1:** Run the command `minikube config use-context minikube`. This command configures `kubectl` to interact with your Minikube cluster.
+* **STEP 2:** Run the command `kubectl config current-context`, which should now show 'minikube'.
+
+### Kubectl context operations
 
 You use the `kubectl config use-context` command followed by the name of the context you want to switch to.
 
