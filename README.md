@@ -1,6 +1,6 @@
-# Learn Kubernetes: Working Examples and References
+# Learn Kubernetes: Working Examples and Education Materials
 
-This repository contain references to working examples, educational and opinions related to Elastic Search technologies.
+This repository contain references to working examples, educational and opinions related to kubernetes.
 
 ## Topics
 
